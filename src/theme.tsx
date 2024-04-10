@@ -1,0 +1,12 @@
+export const primary = "var(--color-primary, #A4C639)";
+export const primaryIntent = "var(--color-primary-hover, #C0E34E)";
+export const primaryAccent = "var(--color-primary-active, #DBFF63)";
+export const secondary = "var(--color-secondary, #5B39C6)";
+export const secondaryIntent = "var(--color-secondary-hover, #724EE3)";
+export const secondaryAccent = "var(--color-secondary-active, #8863FF)";
+export const tertiary = "var(--color-tertiary, #C76E30)";
+export const tertiaryIntent = "var(--color-tertiary-hover, #E38644)";
+export const tertiaryAccent = "var(--color-tertiary-active, #FF9D57)";
+export const background = "var(--color-background, #1F1F1F)";
+export const foreground = "var(--color-foreground, #222222)";
+export const surface = "var(--color-surface, #2B2B2B)";
