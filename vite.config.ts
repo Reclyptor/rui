@@ -12,6 +12,7 @@ export default defineConfig({
       formats: ['es', 'cjs'],
       entry: [
         resolve(__dirname, 'src/component/StyleProvider'),
+        resolve(__dirname, 'src/component/Typography'),
       ]
     },
     rollupOptions: {
