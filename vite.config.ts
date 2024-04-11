@@ -11,6 +11,7 @@ export default defineConfig({
     lib: {
       formats: ['es', 'cjs'],
       entry: [
+        resolve(__dirname, 'src/component/Button'),
         resolve(__dirname, 'src/component/StyleProvider'),
         resolve(__dirname, 'src/component/Typography'),
       ]

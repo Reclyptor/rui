@@ -6,9 +6,14 @@ const { createHooks } = pkg;
 
 export const { styleSheet, css } = createHooks({
   hooks: {
-    "&:active": "&:active",
     "&:hover": "&:hover",
+    "&:active": "&:active",
     "&:focus": "&:focus-visible",
+    "&:intent": "&:hover, &:focus-visible",
+    ".group:hover &": ".group:hover &",
+    ".group:active &": ".group:active &",
+    ".group:focus &": ".group:focus-visible &",
+    ".group:intent &": ".group:hover &, .group:focus-visible &",
     "@screen sm": "@media (min-width: 640px)",
     "@screen md": "@media (min-width: 768px)",
     "@screen lg": "@media (min-width: 1024px)",
