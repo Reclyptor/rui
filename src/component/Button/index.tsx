@@ -1,18 +1,20 @@
 /* @prettier */
 
 import clsx from "clsx";
-import React, { ComponentPropsWithoutRef } from "react";
+import React from "react";
 import { css } from "../../css.tsx";
 import theme from "../../theme.tsx";
+import { WithStandardProps } from "../../util/types.ts";
 import Typography, { TypographyProps } from "../Typography";
 
-type WithStandardProps<T> = T & Omit<ComponentPropsWithoutRef<"button">, keyof T>;
-
-export type ButtonProps = WithStandardProps<{
-  solid?: boolean;
-  size?: "sm" | "md" | "lg";
-  variant?: "primary" | "secondary" | "tertiary"; // Default 'primary'
-}>;
+export type ButtonProps = WithStandardProps<
+  "button",
+  {
+    solid?: boolean;
+    size?: "sm" | "md" | "lg";
+    variant?: "primary" | "secondary" | "tertiary"; // Default 'primary'
+  }
+>;
 
 const Button = (props: ButtonProps) => {
   return (
