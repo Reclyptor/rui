@@ -36,7 +36,7 @@ export const style = (props: TypographyStyleProps) => css({
     italic: props.weight?.includes("italic")
   }),
   color: clsx({
-    [theme.surface]: !props.variant,
+    [theme.surface]: props.variant === "baseline" || !props.variant,
     [theme.primary]: props.variant === "primary",
     [theme.secondary]: props.variant === "secondary",
     [theme.tertiary]: props.variant === "tertiary"

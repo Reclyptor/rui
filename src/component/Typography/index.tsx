@@ -6,7 +6,7 @@ import { style } from "./style.tsx";
 type WithStandardProps<T> = T & Omit<ComponentPropsWithoutRef<"span">, keyof T>;
 
 export type TypographyProps = WithStandardProps<{
-  variant?: "primary" | "secondary" | "tertiary";
+  variant?: "baseline" | "primary" | "secondary" | "tertiary"; // Default 'baseline'
   size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl"; // Default 'md'
   weight?:
     | "thin"
