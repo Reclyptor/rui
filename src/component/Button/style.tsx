@@ -23,6 +23,7 @@ export const style = (props: ButtonStyleProps) =>
       [`solid ${theme.secondary} 2px`]: !props.solid && props.variant === "secondary",
       [`solid ${theme.tertiary} 2px`]: !props.solid && props.variant === "tertiary"
     }),
+    outline: "none",
     minWidth: clsx({
       "fit-content": !props.size,
       "24px": props.size === "sm",
@@ -63,9 +64,6 @@ export const style = (props: ButtonStyleProps) =>
           [`solid ${theme.secondaryAccent} 2px`]: !props.solid && props.variant === "secondary",
           [`solid ${theme.tertiaryAccent} 2px`]: !props.solid && props.variant === "tertiary"
         })
-      }),
-      $("&:focus", {
-        outline: "none"
       })
     ],
     ...props.style
