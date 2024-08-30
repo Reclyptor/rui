@@ -1,7 +1,7 @@
 import { CardProps } from "./index.tsx";
 import { css } from "../../css.tsx";
-import clsx from "clsx";
 import * as theme from "../../theme.tsx";
+import clsx from "clsx";
 
 export type CardStyleProps = Pick<CardProps, "flip" | "solid" | "variant" | "style">;
 

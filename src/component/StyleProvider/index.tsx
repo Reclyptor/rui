@@ -1,5 +1,3 @@
-/* @prettier */
-
 import { ReactNode } from "react";
 import { styleSheet } from "../../css.tsx";
 
@@ -11,7 +9,7 @@ const StyleProvider = (props: StyleProviderProps) => {
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: styleSheet() }} />
-      {props.children}
+      { props.children }
     </>
   );
 };

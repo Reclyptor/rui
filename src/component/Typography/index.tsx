@@ -1,5 +1,3 @@
-/* @prettier */
-
 import { ComponentPropsWithoutRef } from "react";
 import { style } from "./style.tsx";
 
@@ -25,8 +23,8 @@ export type TypographyProps = WithStandardProps<{
 
 const Typography = (props: TypographyProps) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { variant, size, weight, ...rest } = props;
-  return <span {...rest} style={style(props)} />;
+  const { variant: _variant, size: _size, weight: _weight, ...rest } = props;
+  return <span { ...rest } style={ style(props) } />;
 };
 
 export default Typography;

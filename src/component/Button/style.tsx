@@ -1,9 +1,7 @@
-/* @prettier */
-
-import clsx from "clsx";
+import { ButtonProps } from "./index.tsx";
 import { css } from "../../css.tsx";
 import * as theme from "../../theme.tsx";
-import { ButtonProps } from "./index.tsx";
+import clsx from "clsx";
 
 export type ButtonStyleProps = Pick<ButtonProps, "solid" | "size" | "variant" | "style">;
 

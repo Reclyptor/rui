@@ -1,5 +1,3 @@
-/* @prettier */
-
 import * as pkg from "@css-hooks/react";
 
 const { createHooks } = pkg;

@@ -1,7 +1,7 @@
-import { css } from "../../css.tsx";
 import { InputProps } from "./index.tsx";
-import clsx from "clsx";
+import { css } from "../../css.tsx";
 import * as theme from "../../theme.tsx";
+import clsx from "clsx";
 
 export type InputStyleProps = Pick<InputProps, "size" | "variant" | "style">;
 

@@ -1,6 +1,4 @@
-/* @prettier */
-
-import { ReactNode } from "react";
 import StyleProvider from "./src/component/StyleProvider";
+import { ReactNode } from "react";
 
-export default (props: { children: ReactNode }) => <StyleProvider>{props.children}</StyleProvider>;
+export default (props: { children: ReactNode }) => <StyleProvider>{ props.children }</StyleProvider>;

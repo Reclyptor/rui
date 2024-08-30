@@ -1,7 +1,7 @@
-import { css } from "../../css.tsx";
-import clsx from "clsx";
-import * as theme from "../../theme.tsx";
 import { TypographyProps } from "./index.tsx";
+import { css } from "../../css.tsx";
+import * as theme from "../../theme.tsx";
+import clsx from "clsx";
 
 export type TypographyStyleProps = Pick<TypographyProps, "size" | "weight" | "variant" | "style">;
 
