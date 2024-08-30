@@ -29,9 +29,8 @@ export const style = (props: CardStyleProps) => css({
   transition: "transform 500ms ease-in-out",
   transformStyle: "preserve-3d",
   transform: clsx({ "rotateY(180deg)": props.flip }),
-  backfaceVisibility: "visible",
-  ...props.style
-});
+  backfaceVisibility: "visible"
+}, props.style);
 
 export const innerStyle = (props: CardStyleProps) => css({
   position: "absolute",

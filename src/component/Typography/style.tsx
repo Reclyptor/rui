@@ -41,6 +41,5 @@ export const style = (props: TypographyStyleProps) => css({
     [theme.secondary]: props.variant === "secondary",
     [theme.tertiary]: props.variant === "tertiary"
   }),
-  fontVariationSettings: "'wdth' 100, 'YTLC' 500",
-  ...props.style
-});
+  fontVariationSettings: "'wdth' 100, 'YTLC' 500"
+}, props.style);

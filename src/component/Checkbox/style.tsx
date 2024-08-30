@@ -10,6 +10,5 @@ export const style = (props: CheckboxStyleProps) => css({
     [theme.primaryIntent]: props.variant === "primary" || !props.variant,
     [theme.secondaryIntent]: props.variant === "secondary",
     [theme.tertiaryIntent]: props.variant === "tertiary",
-  }),
-  ...props.style
-});
+  })
+}, props.style);

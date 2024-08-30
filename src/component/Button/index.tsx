@@ -19,8 +19,8 @@ const Button = (props: ButtonProps) => {
     <button { ...rest } style={ style(props) } className="group">
       { props.children && React.isValidElement(props.children) ?
         props.children :
-        <Typography size={props.size} style={typographyStyle(props)}>
-          {props.children}
+        <Typography size={ props.size } style={ typographyStyle(props) }>
+          { props.children }
         </Typography>
       }
     </button>

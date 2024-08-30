@@ -52,6 +52,5 @@ export const style = (props: InputStyleProps) => css({
         [`solid ${theme.tertiaryAccent} 2px`]: props.variant === "tertiary"
       })
     }),
-  ],
-  ...props.style
-});
+  ]
+}, props.style);

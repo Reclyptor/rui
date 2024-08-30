@@ -63,9 +63,8 @@ export const style = (props: ButtonStyleProps) =>
           [`solid ${theme.tertiaryAccent} 2px`]: !props.solid && props.variant === "tertiary"
         })
       })
-    ],
-    ...props.style
-  });
+    ]
+  }, props.style);
 
 export const typographyStyle = (props: ButtonStyleProps) =>
   css({
