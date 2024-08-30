@@ -12,6 +12,8 @@ export default defineConfig({
       formats: ['es', 'cjs'],
       entry: [
         resolve(__dirname, 'src/component/Button'),
+        resolve(__dirname, 'src/component/Card'),
+        resolve(__dirname, 'src/component/Input'),
         resolve(__dirname, 'src/component/StyleProvider'),
         resolve(__dirname, 'src/component/Typography'),
       ]
