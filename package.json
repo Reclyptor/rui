@@ -12,12 +12,14 @@
   "dependencies": {
     "@css-hooks/core": "^2.0.3",
     "@css-hooks/react": "^2.0.3",
-    "clsx": "^2.1.0"
+    "clsx": "^2.1.0",
+    "dayjs": "^1.11.13"
   },
   "bundledDependencies": [
     "@css-hooks/core",
     "@css-hooks/react",
-    "clsx"
+    "clsx",
+    "dayjs"
   ],
   "devDependencies": {
     "@types/node": "^20.12.7",
@@ -42,6 +44,7 @@
   "bundleDependencies": [
     "@css-hooks/core",
     "@css-hooks/react",
-    "clsx"
+    "clsx",
+    "dayjs"
   ]
 }
