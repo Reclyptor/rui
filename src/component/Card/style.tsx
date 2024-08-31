@@ -32,7 +32,7 @@ export const style = (props: CardStyleProps) => css({
   backfaceVisibility: "visible"
 }, props.style);
 
-export const innerStyle = (props: CardStyleProps) => css({
+export const styleInner = (props: CardStyleProps) => css({
   position: "absolute",
   borderRadius: "inherit",
   border: "inherit",

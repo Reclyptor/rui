@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from "../Typography";
 import { WithStandardProps } from "../../util/types.ts";
-import { style, typographyStyle } from "./style.tsx";
+import { style, styleTypography } from "./style.tsx";
 
 export type ButtonProps = WithStandardProps<
   "button",
@@ -19,7 +19,7 @@ const Button = (props: ButtonProps) => {
     <button { ...rest } style={ style(props) } className="group">
       { props.children && React.isValidElement(props.children) ?
         props.children :
-        <Typography size={ props.size } style={ typographyStyle(props) }>
+        <Typography size={ props.size } style={ styleTypography(props) }>
           { props.children }
         </Typography>
       }

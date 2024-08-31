@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import Typography from "../Typography";
 import { WithStandardProps } from "../../util/types.ts";
-import { innerStyle, style } from "./style.tsx";
+import { styleInner, style } from "./style.tsx";
 
 export type CardProps = WithStandardProps<
   "div",
@@ -20,7 +20,7 @@ const Card = (props: CardProps) => {
   return (
     <div { ...rest } style={ style(props) }>
       { props.front &&
-        <div style={ innerStyle({ flip: false }) }>
+        <div style={ styleInner({ flip: false }) }>
           { React.isValidElement(props.front) ?
             props.front :
             <Typography variant={ props.solid ? "baseline" : props.variant }>{ props.front }</Typography>
@@ -28,7 +28,7 @@ const Card = (props: CardProps) => {
         </div>
       }
       { props.back &&
-        <div style={ innerStyle({ flip: true }) }>
+        <div style={ styleInner({ flip: true }) }>
           { React.isValidElement(props.back) ?
             props.back :
             <Typography variant={ props.solid ? "baseline" : props.variant }>{ props.back }</Typography>

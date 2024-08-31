@@ -66,7 +66,7 @@ export const style = (props: ButtonStyleProps) =>
     ]
   }, props.style);
 
-export const typographyStyle = (props: ButtonStyleProps) =>
+export const styleTypography = (props: ButtonStyleProps) =>
   css({
     color: clsx({
       [theme.surface]: props.solid,
