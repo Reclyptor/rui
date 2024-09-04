@@ -15,6 +15,7 @@
     "clsx": "^2.1.0",
     "dayjs": "^1.11.13",
     "lucide-react": "^0.436.0",
+    "react-popper": "^2.3.0",
     "react-window": "^1.8.10"
   },
   "bundledDependencies": [
@@ -23,6 +24,7 @@
     "clsx",
     "dayjs",
     "lucide-react",
+    "react-popper",
     "react-window"
   ],
   "devDependencies": {
@@ -51,6 +53,7 @@
     "clsx",
     "dayjs",
     "lucide-react",
+    "react-popper",
     "react-window"
   ]
 }
