@@ -14,14 +14,16 @@
     "@css-hooks/react": "^2.0.3",
     "clsx": "^2.1.0",
     "dayjs": "^1.11.13",
-    "lucide-react": "^0.436.0"
+    "lucide-react": "^0.436.0",
+    "react-window": "^1.8.10"
   },
   "bundledDependencies": [
     "@css-hooks/core",
     "@css-hooks/react",
     "clsx",
     "dayjs",
-    "lucide-react"
+    "lucide-react",
+    "react-window"
   ],
   "devDependencies": {
     "@types/node": "^20.12.7",
@@ -48,6 +50,7 @@
     "@css-hooks/react",
     "clsx",
     "dayjs",
-    "lucide-react"
+    "lucide-react",
+    "react-window"
   ]
 }
