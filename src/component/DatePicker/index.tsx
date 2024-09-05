@@ -1,6 +1,13 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Calendar as CalendarIcon } from "lucide-react";
-import { styleButton, styleIcon, styleTypography } from "./style.tsx";
+import {
+  styleButton,
+  styleCard,
+  styleContent, styleFooter,
+  styleHeader,
+  styleIcon,
+  styleTypography
+} from "./style.tsx";
 import Typography from "../Typography";
 import dayjs from "dayjs"
 
@@ -13,7 +20,7 @@ export type DatePickerProps = {
 
 const DatePicker = (props: DatePickerProps) => {
   const { current: now } = useRef(dayjs());
-  const [open, setOpen] = useState<boolean>(true);
+  const [open, setOpen] = useState<boolean>(false);
   const [value, setValue] = useState<Date | undefined>(props.value);
 
   return (
@@ -24,6 +31,19 @@ const DatePicker = (props: DatePickerProps) => {
           { value ? dayjs(value).format("YYYY-MM-DD") : "Select Date" }
         </Typography>
       </button>
+      { open &&
+        <div style={ styleCard(props) }>
+          <div style={ styleHeader(props) }>
+
+          </div>
+
+          <div style={ styleContent(props) }>
+          </div>
+
+          <div style={ styleFooter(props) }>
+          </div>
+        </div>
+      }
     </>
   );
 };

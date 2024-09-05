@@ -14,6 +14,8 @@ export default defineConfig({
         resolve(__dirname, 'src/component/Button'),
         resolve(__dirname, 'src/component/Card'),
         resolve(__dirname, 'src/component/Checkbox'),
+        resolve(__dirname, 'src/component/DatePicker'),
+        resolve(__dirname, 'src/component/Dropdown'),
         resolve(__dirname, 'src/component/FlipCard'),
         resolve(__dirname, 'src/component/Input'),
         resolve(__dirname, 'src/component/StyleProvider'),
