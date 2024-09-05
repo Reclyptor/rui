@@ -1,11 +1,12 @@
-import { CardProps } from "./index.tsx";
+import { FlipCardProps } from "./index.tsx";
 import { css } from "../../css.tsx";
 import * as theme from "../../theme.tsx";
 import clsx from "clsx";
 
-export type CardStyleProps = Pick<CardProps, "solid" | "variant" | "style">;
+export type FlipCardStyleProps = Pick<FlipCardProps, "flip" | "solid" | "variant" | "style">;
 
-export const style = (props: CardStyleProps) => css({
+export const style = (props: FlipCardStyleProps) => css({
+  position: "relative",
   borderRadius: "8px",
   border: clsx({
     "solid transparent 2px": props.solid,
@@ -25,4 +26,23 @@ export const style = (props: CardStyleProps) => css({
     [theme.secondary]: !props.solid && props.variant === "secondary",
     [theme.tertiary]: !props.solid && props.variant === "tertiary"
   }),
+  transition: "transform 500ms ease-in-out",
+  transformStyle: "preserve-3d",
+  transform: clsx({ "rotateY(180deg)": props.flip }),
+  backfaceVisibility: "visible"
 }, props.style);
+
+export const styleInner = (props: FlipCardStyleProps) => css({
+  position: "absolute",
+  boxSizing: "border-box",
+  borderRadius: "inherit",
+  border: "none",
+  background: "inherit",
+  color: "inherit",
+  transition: "transform 500ms ease-in-out",
+  transformStyle: "preserve-3d",
+  transform: clsx({ "rotateY(180deg)": props.flip }),
+  backfaceVisibility: "hidden",
+  width: "inherit",
+  height: "inherit",
+});

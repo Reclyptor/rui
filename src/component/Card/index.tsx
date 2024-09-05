@@ -1,41 +1,19 @@
-import React, { ReactNode } from "react";
-import Typography from "../Typography";
 import { WithStandardProps } from "../../util/types.ts";
-import { styleInner, style } from "./style.tsx";
+import { style } from "./style.tsx";
 
 export type CardProps = WithStandardProps<
   "div",
   {
-    flip?: boolean;
     solid?: boolean;
     variant?: "primary" | "secondary" | "tertiary"; // Default 'primary'
-    front?: ReactNode;
-    back?: ReactNode;
   }
 >;
 
 const Card = (props: CardProps) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { flip: _flip, solid: _solid, variant: _variant, front: _front, back: _back, ...rest } = props;
+  const { solid: _solid, variant: _variant, ...rest } = props;
   return (
-    <div { ...rest } style={ style(props) }>
-      { props.front &&
-        <div style={ styleInner({ flip: false }) }>
-          { React.isValidElement(props.front) ?
-            props.front :
-            <Typography variant={ props.solid ? "baseline" : props.variant }>{ props.front }</Typography>
-          }
-        </div>
-      }
-      { props.back &&
-        <div style={ styleInner({ flip: true }) }>
-          { React.isValidElement(props.back) ?
-            props.back :
-            <Typography variant={ props.solid ? "baseline" : props.variant }>{ props.back }</Typography>
-          }
-        </div>
-      }
-    </div>
+    <div { ...rest } style={ style(props) } />
   );
 };
 
