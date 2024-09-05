@@ -6,6 +6,7 @@ import clsx from "clsx";
 export type TypographyStyleProps = Pick<TypographyProps, "size" | "weight" | "variant" | "style">;
 
 export const style = (props: TypographyStyleProps) => css({
+  display: "inline-block",
   fontFamily: "'Nunito Sans', sans-serif",
   fontOpticalSizing: "auto",
   fontWeight: clsx({
